@@ -4,6 +4,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 // TODO: Create an array of questions for user input
 const questions = [];
 
@@ -62,7 +63,8 @@ function init() {
       },
     ])
     .then((answers) => {
-      console.log(answers);
+      const readmeContent = generateMarkdown(answers);
+      console.log(readmeContent);
       // const htmlPageContent = generateHTML(answers);
       // fs.writeFile('index.html', htmlPageContent, (err) =>
       //   err ? console.log(err) : console.log('Successfully created index.html!')
