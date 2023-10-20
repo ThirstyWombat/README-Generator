@@ -1,3 +1,6 @@
+// create a markdown template with the answer variables concatenated in their correct locations
+// place this string into the generate markdown function with the answer variables as parameters
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
