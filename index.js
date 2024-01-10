@@ -74,7 +74,7 @@ function init() {
       answers.github
     );
 
-    fs.writeFile("README.test.md", readmeContent, (err) =>
+    fs.writeFile("README.md", readmeContent, (err) =>
       err ? console.log(err) : console.log("Successfully created README!")
     );
   });
