@@ -1,45 +1,25 @@
-# README Generator
+# README-Generator
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Demo
+
+<a href="https://drive.google.com/file/d/1igzb1_-iLpdNo0ByEgoHohwDPl3VOBJ2/view">Demonstration Video</a>
 
 ## Description
 
-an app that generates a readme
-
-## Table of Contents
-
-[Installation](#installation)
-
-[Usage](#usage)
-
-[License](#license)
-
-[Contributing](#contributing)
-
-[Tests](#tests)
-
-[Questions](#questions)
+This repository contains a README generator that uses user input in the command line to generate the README.
 
 ## Installation
 
-npm i in the terminal
+Node js is required for this application. Run npm i in the command line to install the necessary dependencies.
 
 ## Usage
 
-follow the inquirer prompts
+Initiate the app by running node index.js in the terminal. You will then be prompted with questions regarding what title, description, usage instructions, test instructions, license, and contribution instructions you want your README to have.You will also be asked your github username and e-mail address. When all prompts are completed a README file will be generated that reflects your chosen criteria.
+
+## Credits
+
+N/A
 
 ## License
 
-This application is covered under the <a href="https://opensource.org/licenses/MIT">MIT</a> license.
-
-## Contributing
-
-fork the repo and open pull requests
-
-## Tests
-
-n/a
-
-## Questions
-
-If you have any questions about the repo, open an issue or contact me directly at email@email.com. You can find more of my work at [ThirstyWombat](https://github.com/ThirstyWombat).
+Please refer to the LICENSE in the repository.
