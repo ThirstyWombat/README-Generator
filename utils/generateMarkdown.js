@@ -1,8 +1,3 @@
-// create a markdown template with the answer variables concatenated in their correct locations
-// place this string into the generate markdown function with the answer variables as parameters
-//switch cases in each of the license functions to determine which license to use
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
@@ -21,12 +16,7 @@ function renderLicenseBadge(license) {
       return "";
   }
 }
-const licenseTEST = "APACHE 2.0";
 
-const test = renderLicenseBadge(licenseTEST);
-console.log(` test is : ${test}`);
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license) {
   switch (license) {
     case "MIT":
@@ -46,22 +36,19 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license) {
   const link = renderLicenseLink(license);
   if (license === "None") {
     return `## License
 
-    N/A`;
+N/A`;
   } else {
     return `## License
 
-    This application is covered under the ${link} license.`;
+This application is covered under the ${link} license.`;
   }
 }
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(
   title,
   badge,
@@ -75,7 +62,7 @@ function generateMarkdown(
   github
 ) {
   return `# ${title}
-  ${badge}
+${badge}
   
 ## Description
   
@@ -106,7 +93,6 @@ ${usage}
 ${license}
 
 
-  
 ## Contributing
 
 ${contribution}
